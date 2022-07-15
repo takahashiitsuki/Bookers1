@@ -22,7 +22,7 @@
             <td><%= book.body %></td>
             <td><%= link_to "Show","/books/#{book.id}" %></td>
             <td><%= link_to "Edit", "/books/#{book.id}/edit" %></td>
-            <td><%= link_to "destroy", "/books/#{book.id}",method: :delete,"data-confirm"=>"本当に削除しますか？" %></td>
+            <td><%= link_to "Destroy", "/books/#{book.id}",method: :delete,"data-confirm"=>"本当に削除しますか？" %></td>
           </tr>
         <% end %>
       </tbody>
@@ -60,7 +60,7 @@
       </div>
 
       <div class="field">
-        <%= f.submit 'CreateBook' %>
+        <%= f.submit 'Create Book' %>
       </div>
     <% end %>
   </body>
